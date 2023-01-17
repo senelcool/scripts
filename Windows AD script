@@ -1,0 +1,1 @@
+Get-ADComputer -Filter {(Enabled -eq $True)} -Property * | Select-Object Name,OperatingSystem,OperatingSystemVersion |export-csv -path .\osversions.csv
